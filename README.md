@@ -1,3 +1,3 @@
 # syumi
-set up a serve locally
--> python3 serve.py
+set up a server locally
+-> python3 server.py
