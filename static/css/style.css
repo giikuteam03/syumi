@@ -1,0 +1,149 @@
+
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#area{
+    left: 30%;
+    top: 20%;
+    display: inline-block;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(247, 192, 192);
+    position: absolute;
+}
+
+@keyframes right{
+    0%{
+         margin-left: 8px;
+        }
+    100%{
+         transform: 0px;
+        }
+    }
+@keyframes top{
+    0%{
+         margin-top: 0px;
+        }
+    100%{
+         margin-top: 8px;
+        }
+    }
+.anime{
+    animation: left 0.7s  ease-in-out infinite alternate,
+    top 1.2s ease-in-out infinite alternate;
+}
+
+.korokoro {
+    animation: korokoro 3.0s ease-in-out infinite alternate;
+  }
+  
+  @keyframes korokoro {
+    0%   { transform: translate(0%, 0%); }
+    5%   { transform: translate(5%, 0%) rotate(5deg); }
+    /* 25%  { transform: translate(10%, 0%) rotate(10deg); }
+    27%   { transform: translate(0%, 0%); }
+    30%  { transform: translate(-5%, 0%) rotate(-5deg); } */
+    40%  { transform: translate(-10%, 0%) rotate(-10deg); }
+    42%   { transform: translate(0%, 0%); }
+    45%  { transform: translate(5%, 0%) rotate(5deg); }
+    55%  { transform: translate(10%, 0%) rotate(10deg); }
+    50%   { transform: translate(0%, 0%); }
+    /* 65%  { transform: translate(-2%, 0%) rotate(-2deg); }
+    70%  { transform: translate(-5%, 0%) rotate(-5deg); }
+    80%  { transform: translate(0%, 0%) rotate(0deg); }
+    100% { transform: translate(0%, 0%) rotate(0deg); } */
+  }
+
+#en1{
+    top: 50px;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    position:absolute;
+    border-radius: 50%;
+}
+#en2{
+    top:50%;
+    left:20%;
+    width: 100px;
+    height: 100px;
+    background-color:slateblue;
+    position:absolute;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+#en3{
+    left:50%;
+    top: 30%;
+    width: 200px;
+    height: 200px;
+    background-color:violet;
+    position: absolute;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.moji{
+    top:40%;
+    left:15%;
+    position: relative;
+}
+
+.gengo1{
+    top:40%;
+    left:40%;
+    position: relative;
+}
+.gengo2{
+    top:40%;
+    left:20%;
+    position: relative;
+}
+.gengo3{
+    top:50%;
+    left:30%;
+    position: relative;
+}
+
+.den1{
+    top:5%;
+    left:20%;
+    background-color:darkgray;
+    border-radius: 80% 80% 80% 80% / 100% 100% 65% 65%;
+    border:black;
+    position: absolute;
+    width: 110px;
+    height: 150px;
+}
+
+.den2{
+    top:5%;
+    right:15%;
+    background-color:rgb(207, 79, 79);
+    position: absolute;
+    width: 110px;
+    height: 150px;
+    border-radius: 80% 80% 80% 80% / 100% 100% 65% 65%;
+}
+
+.den3{
+    bottom:0%;
+    left:20%;
+    background-color:rgb(110, 223, 135);
+    border-radius: 80% 80% 80% 80% / 100% 100% 65% 65%;
+    position: absolute;
+    width: 110px;
+    height: 150px;
+}
+
+.den4{
+    bottom:0%;
+    right:15%;
+    background-color: cadetblue;
+    border-radius: 80% 80% 80% 80% / 100% 100% 65% 65%;
+    position: absolute;
+    width: 110px;
+    height: 150px;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    {% set mokuteki1 = data["mokuteki1"] %}
+    {% set mokuteki2 = data["mokuteki2"] %}
+    {% set mokuteki3 = data["mokuteki3"] %}
+    {% set mokuteki4 = data["mokuteki4"] %}
+    <div class="den1 korokoro">
+        <h3 class="moji"><p>{{ mokuteki1 }}</p></h3>
+    </div>
+    <div class="den2 korokoro">
+        <h3 class="moji"><p>{{ mokuteki2 }}</p></h3>
+    </div>
+    <div class="area rounded-circle" id="area"> 
+        {% set gengo1 = data["gengo1"] %}
+        {% set gengo2 = data["gengo2"] %}
+        {% set gengo3 = data["gengo3"] %} 
+        <div class="anime en1" id="en1" onclick="myFunction1()">
+            <h2 class="gengo1"><p1>{{ gengo1 }}</p1></h2>
+        </div>
+        <div class="anime en2" id="en2" onclick="myFunction2()">
+            <h2 class="gengo2"><p2>{{ gengo2 }}</p2></h2>
+        </div> 
+        <div class="anime en3" id="en3" onclick="myFunction3()">
+            <h2 class="gengo3"><p3>{{ gengo3 }}</p3></h2>
+        </div> 
+    </div>
+    <div class="den3 korokoro">
+        <h3 class="moji"><p>{{ mokuteki3 }}</p></h3>
+    </div>
+    <div class="den4 korokoro">
+        <h3 class="moji"><p>{{ mokuteki4 }}</p></h3>
+    </div>
+</body>
+
+<script>
+    
+    function myFunction1(){
+        let area = document.getElementById("area")
+        let en1 = document.getElementById("en1")
+        let en2 = document.getElementById("en2")
+        let en3 = document.getElementById("en3")
+
+        if (en2.style.display == "none"){
+            area.style.backgroundColor = "rgb(247, 192, 192)"
+            en1.style.top = "10%"
+            en1.style.left = "40%"
+            en1.style.width = "50px"
+            en1.style.height = "50px"
+
+            en2.style.display = "block"
+            en3.style.display = "block"
+
+        }else{
+            area.style.backgroundColor = "white"
+            en1.style.top = "0%"
+            en1.style.left = "0%"
+            en1.style.width = "100%"
+            en1.style.height = "100%"
+
+            en2.style.display = "none"
+            en3.style.display = "none"
+        }
+    }
+
+    function myFunction2(){
+        let area = document.getElementById("area")
+        let en1 = document.getElementById("en1")
+        let en2 = document.getElementById("en2")
+        let en3 = document.getElementById("en3")
+
+        if (en1.style.display == "none"){
+            area.style.backgroundColor = "rgb(247, 192, 192)"
+            en2.style.top = "50%"
+            en2.style.left = "20%"
+            en2.style.width = "100px"
+            en2.style.height = "100px"
+
+            en1.style.display = "block"
+            en3.style.display = "block"
+
+        }else{
+            area.style.backgroundColor = "white"
+            en2.style.top = "0%"
+            en2.style.left = "0%"
+            en2.style.width = "100%"
+            en2.style.height = "100%"
+
+            en1.style.display = "none"
+            en3.style.display = "none"
+        }
+    }
+
+    function myFunction3(){
+        let area = document.getElementById("area")
+        let en1 = document.getElementById("en1")
+        let en2 = document.getElementById("en2")
+        let en3 = document.getElementById("en3")
+
+        if (en2.style.display == "none"){
+            area.style.backgroundColor = "rgb(247, 192, 192)"
+            en3.style.top = "30%"
+            en3.style.left = "50%"
+            en3.style.width = "200px"
+            en3.style.height = "200px"
+
+            en1.style.display = "block"
+            en2.style.display = "block"
+
+        }else{
+            area.style.backgroundColor = "white"
+            en3.style.top = "0%"
+            en3.style.left = "0%"
+            en3.style.width = "100%"
+            en3.style.height = "100%"
+
+            en1.style.display = "none"
+            en2.style.display = "none"
+        }
+    }
+
+
+
+
+</script>

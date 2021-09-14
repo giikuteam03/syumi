@@ -1,0 +1,43 @@
+body{
+    width: 666px;
+    height:820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+    color:rgb(9, 8, 87);
+    background-color: rgb(245, 238, 210);
+    border: 1mm ridge rgb(71, 50, 50);
+}
+
+html{
+    background-color: cornsilk;
+}
+
+
+.gengo_all{
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 5px;
+}
+
+/* h3{
+    margin-left: 5px;
+} */
+
+#nakami{
+    scroll-margin-inline-end: 20px;
+    width: 650px;
+    height: 800px;
+    margin-top: 8px;
+    margin-left: 8px;
+    background-color: rgb(245, 238, 210);
+    position: absolute;
+    /* border: solid 3px darkblue; */
+    border-radius: 2%;
+}
+
+#mojiarea{
+    margin-top: 5px;
+    margin-left:5px;
+    position: absolute;
+}
